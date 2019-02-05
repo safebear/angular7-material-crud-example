@@ -25,7 +25,7 @@ https://github.com/didinj/NodeRestApi.git
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-On the aws server, run `nohup mongod &` and then `nohup npm start &` for the NodeRestApi and then `npm build` for the Angular app (the production build doesn't work) and then run the npm http-server (npm install -g http-server) in the `dist/angular...etc` build directory with the command `nohup http-server &` to get it up and running.
+On the aws server, run `nohup mongod &` and then `nohup npm start &` for the NodeRestApi and then `ng build .` for the Angular app (the production build doesn't work) and then run the npm http-server (npm install -g http-server) in the `dist/angular...etc` build directory with the command `nohup http-server &` to get it up and running.
 
 The `api.service.ts` file was also changed so that the api IP was that of the AWS server, rather than `localhost` just to get it working.
 
